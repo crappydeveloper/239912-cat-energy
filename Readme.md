@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Артем Лапкин](https://up.htmlacademy.ru/adaptive/13/user/239912).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зверобоев](https://htmlacademy.ru/profile/id307159).
 
 ---
 
