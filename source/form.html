@@ -31,23 +31,18 @@
     </header>
     <main>
       <section class="form-section">
+
         <h1 class="form-section__general-heading">Подбор программы</h1>
         <p class="form-section__paragraph">Заполните анкету и мы подберем
 программу питания для вашего кота</p>
         <form class="programm-form form-section__paragraph__programm-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="programm-form__cat-information">
-            <label for="cat-name">
-              Имя:*
-              <input type="text" class="programm-form__input" placeholder="Барсик" name="cat-name" id="cat-name">
-            </label>
-            <label for="cat-weight">
-              Вес (кг):*
-              <input type="text" class="programm-form__input" placeholder="7" name="cat-weight" id="cat-weight">
-            </label>
-            <label for="cat-age">
-              Возраст (лет):
-              <input type="text" class="programm-form__input" placeholder="7" name="cat-age" id="cat-age">
-            </label>
+            <label for="cat-name">Имя:*</label>
+            <input type="text" class="programm-form__input" placeholder="Барсик" name="cat-name" id="cat-name">
+            <label for="cat-weight">Вес (кг):*</label>
+            <input type="text" class="programm-form__input" placeholder="7" name="cat-weight" id="cat-weight">
+            <label for="cat-age">Возраст (лет):</label>
+            <input type="text" class="programm-form__input" placeholder="7" name="cat-age" id="cat-age">
           </div>
           <div class="programm-form__purpose">
             <input class="programm-form__radio" type="radio" name="purpose" value="lose-weight" id="lose-weight">
@@ -60,9 +55,9 @@
           <div class="programm-form__contacts">
             <h2 class="programm-form__heading">Контактные данные (владельца кота)</h2>
             <label for="owner-email">E-mail:*</label>
-            <input type="text" class="programm-form__input" placeholder="kuklachev@gmail.com" name="owner-email" id="owner-email">
+            <input type="email" class="programm-form__input" placeholder="kuklachev@gmail.com" name="owner-email" id="owner-email">
             <label for="owner-number">Телефон:*</label>
-            <input type="text" class="programm-form__input" placeholder="8 (960) 900-60-90" name="owner-number" id="owner-number">
+            <input type="tel" class="programm-form__input" placeholder="8 (960) 900-60-90" name="owner-number" id="owner-number">
           </div>
           <div class="programm-form__comments">
             <h2 class="programm-form__heading">Комментарий</h2>
@@ -83,13 +78,16 @@
           <button class="link programm-form__link" type="submit" name="submit-button">Отправить заявку</button>
           <small class="programm-form__note">* — Обязательные поля</small>
         </form>
+
       </section>
       <section class="address-map-section">
+
         <h2 class="visually-hidden">Карта и адрес</h2>
         <h3 class="address-map-section__invite">Приглашаем  к сотрудничеству  дилеров!</h3>
         <p class="address-map-section__paragraph">ул. Большая Конюшенная, д. 19/8
 Санкт-Петербург</p>
         <div class="map address-map-section__map"></div>
+
       </section>
     </main>
     <footer class="main-footer">
