@@ -1,0 +1,33 @@
+@import "variables", "compare", "example", "feature-card", "features", "links", "location", "main-footer", "promo", "way-card", "way", "main-header", "dropdown", "title", "production", "product-card", "more", "extra", "extra-card", "program", "form";
+@font-face {
+  font-family: 'Oswald';
+  src: url('../fonts/oswaldregular.woff2') format('woff2'),
+       url('../fonts/oswaldregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('../fonts/oswaldmeduim.woff2') format('woff2'),
+       url('../fonts/oswaldmeduim.woff') format('woff');
+  font-weight: medium;
+  font-style: medium;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Oswala', 'Arial', sans-serif;
+  color: #111111;
+}
+
+.visually-hidden {
+  position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}

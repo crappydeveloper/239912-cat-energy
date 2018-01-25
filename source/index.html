@@ -2,25 +2,26 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
     <header class="main-header">
-      <a href="index.html" class="logo main-header__logo">
-        <img width="33" height="38" src="http://via.placeholder.com/33x38" alt="Логотип">
-        <p class="logo__paragraph"><span class="logo__cat">Cat</span>Energy</p>
+      <a href="" class="main-header__logo">
+        <img width="33" height="38" src="../img/icon-logo-mobile.svg" alt="Логотип">
+        <img width="110" height="18" src="../img/logo-mobile-header.svg" alt="">
       </a>
       <button class="main-header__burger">Меню навигации</button>
       <nav class="main-nav">
         <ul class="dropdown">
           <li class="dropdown__item">
-            <a href="index.html">Главная</a>
+            <a class="dropdown__link" href="">Главная</a>
           </li>
           <li class="dropdown__item">
-            <a href="">Каталог продукции</a>
+            <a class="dropdown__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="dropdown__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="dropdown__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -28,7 +29,7 @@
     <main>
       <section class="promo">
 
-        <h1 class="promo__heading">Кэт Энерджи — магазин с правильным питанием для котов</h1>
+        <h1 class="promo__heading">Функциональное питание для котов</h1>
         <p class="promo__paragraph">Занялся собой? Займись котом!</p>
         <img width="280" height="270" src="http://via.placeholder.com/280x270" alt="Корм для котов с курицей">
         <a href="form.html" class="promo__link">Подобрать программу</a>
@@ -38,16 +39,16 @@
 
         <h2 class="visually-hidden">Выбор цели питания</h2>
         <ul class="way__list">
-          <li class="way-cart">
-            <h3 class="way-cart__heading">Похудение</h3>
-            <p class="way-cart__paragraph">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a href="" class="way-cart__link">Каталог Slim</a>
+          <li class="way-card">
+            <h3 class="way-card__heading">Похудение</h3>
+            <p class="way-card__paragraph">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a href="" class="way-card__link">Каталог Slim</a>
           </li>
-          <li class="way-cart">
-            <h3 class="way-cart__heading">Набор массы</h3>
-            <p class="way-cart__paragraph">Заработать авторитет среди дворовых котов и даже собак?
+          <li class="way-card">
+            <h3 class="way-card__heading">Набор массы</h3>
+            <p class="way-card__paragraph">Заработать авторитет среди дворовых котов и даже собак?
 Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы !</p>
-            <a href="" class="way-cart__link button">Каталог pro</a>
+            <a href="" class="way-card__link">Каталог pro</a>
           </li>
         </ul>
       </section>
@@ -101,26 +102,28 @@
         <img width="311" height="232" src="http://via.placeholder.com/311x232" alt="Котик">
         <div class="compare example__compare">
           <p class="compare__paragraph">Было</p>
-          <input type="radio" class="compare__range">
+          <input type="checkbox" class="compare__range">
           <p class="compare__paragraph">Стало</p>
         </div>
 
       </section>
       <section class="location">
 
-        <h2 class="visually-hidden">Карта и адрес</h2>
-        <strong class="location__invite">Приглашаем  к сотрудничеству  дилеров!</strong>
-        <p class="location__paragraph">ул. Большая Конюшенная, д. 19/8
+        <div class="location__paragraph">
+          <h2 class="visually-hidden">Карта и адрес</h2>
+          <strong class="location__invite">Приглашаем  к сотрудничеству  дилеров!</strong>
+          <p class="location__address">ул. Большая Конюшенная, д. 19/8
 Санкт-Петербург</p>
+        </div>
         <div class="map location__map"></div>
 
       </section>
     </main>
     <footer class="main-footer">
       <a href="" class="main-footer__logo">
-        <p class="main-footer__paragraph"><span class="main-footer__cat">Cat</span>Energy</p>
+        <img width="128" width="24" src="../img/logo-footer.svg" alt="">
       </a>
-      <ul class="main-footer__links links">
+      <ul class="links main-footer__links">
         <li class="links__item">
           <a href="" class="links__link">
             <svg></svg>

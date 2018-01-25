@@ -1,0 +1,7 @@
+.title {
+  @include strong_text;
+  font-size: 36px;
+  line-height: 60px;
+  text-transform: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}

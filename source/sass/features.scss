@@ -1,0 +1,15 @@
+.features {
+
+}
+
+.features__heading {
+  @include strong_text;
+  text-transform: capitalize;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.features__list {
+  list-style: none;
+  padding: 40px 20px;
+}

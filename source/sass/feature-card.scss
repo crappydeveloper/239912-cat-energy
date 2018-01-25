@@ -1,0 +1,9 @@
+.feature-card {
+
+}
+
+.feature-card__paragraph {
+  @include normal_text;
+  font-size: 14px;
+  line-height: 18px;
+}

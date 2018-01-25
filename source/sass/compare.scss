@@ -1,0 +1,9 @@
+.compare {
+  text-align: center;
+}
+
+.compare__paragraph {
+  @include strong_text;
+  font-size: 16px;
+  line-height: 20px;
+}

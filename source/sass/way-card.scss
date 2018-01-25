@@ -1,0 +1,28 @@
+.way-card {
+  background-color: #f2f2f2;
+  padding: 39px 20px 20px;
+}
+
+.way-card__heading {
+  @include strong_text;
+  font-size: 24px;
+  line-height: 23px;
+}
+
+.way-card__paragraph {
+  @include normal_text;
+  padding-bottom: 23px;
+  font-size: 14px;
+  line-height: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.way-card__link {
+  @include strong_text;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  &:active {
+    opacity: 0.3;
+  }
+}
