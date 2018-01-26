@@ -1,0 +1,15 @@
+.way {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.way__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.way__way-card:not(:last-child) {
+  margin-bottom: 20px;
+}

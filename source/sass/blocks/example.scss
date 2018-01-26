@@ -1,9 +1,12 @@
 .example {
+  padding: 20px 20px 38px;
   background-color: #f2f2f2;
 }
 
 .example__heading {
   @include strong_text;
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 36px;
   line-height: 60px;
   text-transform: none;
@@ -16,7 +19,10 @@
 
 .example__paragraph {
   @include normal_text;
-  padding: 0 10px;
+  padding: 0;
+  padding-right: 1px;
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 14px;
   line-height: 18px;
 
@@ -31,7 +37,9 @@
 }
 
 .example__cost {
-  @include normal_text;
+  @include strong_text;
+  padding: 0;
+  margin: 0;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 20px;

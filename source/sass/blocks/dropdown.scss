@@ -1,5 +1,7 @@
 .dropdown {
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .dropdown__item {
@@ -8,6 +10,7 @@
 
 .dropdown__link {
   @include strong_text;
+  padding: 20px 0;
   font-size: 20px;
   line-height: 20px;
   text-decoration: none;

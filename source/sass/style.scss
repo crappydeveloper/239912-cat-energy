@@ -1,33 +1,30 @@
-@import "variables", "compare", "example", "feature-card", "features", "links", "location", "main-footer", "promo", "way-card", "way", "main-header", "dropdown", "title", "production", "product-card", "more", "extra", "extra-card", "program", "form";
-@font-face {
-  font-family: 'Oswald';
-  src: url('../fonts/oswaldregular.woff2') format('woff2'),
-       url('../fonts/oswaldregular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+@import "fonts";
+@import "normalize";
+@import "variables";
+@import "mixins";
 
-@font-face {
-  font-family: 'Oswald';
-  src: url('../fonts/oswaldmeduim.woff2') format('woff2'),
-       url('../fonts/oswaldmeduim.woff') format('woff');
-  font-weight: medium;
-  font-style: medium;
-}
+@import "global";
 
-body {
-  background-color: #ffffff;
-  font-family: 'Oswala', 'Arial', sans-serif;
-  color: #111111;
-}
+@import "./blocks/main-header";
+@import "./blocks/main-nav";
+@import "./blocks/dropdown";
+@import "./blocks/promo";
+@import "./blocks/way";
+@import "./blocks/way-card";
+@import "./blocks/features";
+@import "./blocks/feature-card";
+@import "./blocks/example";
+@import "./blocks/compare";
+@import "./blocks/location";
+@import "./blocks/main-footer";
+@import "./blocks/links";
 
-.visually-hidden {
-  position: absolute;
-	overflow: hidden;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	width: 1px;
-	margin: -1px;
-	padding: 0;
-	border: 0;
-}
+@import "./blocks/title";
+@import "./blocks/production";
+@import "./blocks/product-card";
+@import "./blocks/more";
+@import "./blocks/extra";
+@import "./blocks/extra-card";
+
+@import "./blocks/program";
+@import "./blocks/form";

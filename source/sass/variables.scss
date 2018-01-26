@@ -1,18 +1,5 @@
 $main_color: #68b738;
 $main_color_hover: #5eaa2f;
-$text_color_active: rgba(255, 255, 255, 0.3);
+$text_color_active: rgba(#ffffff, 0.3);
 $normal_text: #444444;
 $strong_text: #111111;
-
-@mixin normal_text() {
-  font-family: 'Arial';
-  font-weight: normal;
-  color: $normal_text;
-}
-
-@mixin strong_text() {
-  font-family: 'Oswald';
-  text-transform: uppercase;
-  font-weight: normal;
-  color: $strong_text;
-}

@@ -1,4 +1,6 @@
 .main-footer {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   padding: 39px 20px 20px;
   background-color: #f2f2f2;
@@ -22,6 +24,12 @@
 }
 
 .main-footer__academy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-footer__link {
   @include normal_text;
   text-decoration: none;
   font-size: 16px;

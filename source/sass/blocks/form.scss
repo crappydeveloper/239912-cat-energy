@@ -73,23 +73,24 @@
 .form label,
 .form textarea {
   @include strong_text;
+  font-family: 'Oswald';
   font-size: 16px;
   line-height: 16px;
   color: #222222;
 }
 
 .form input {
-   padding: 10px 14px;
-   outline: none;
-   border: 1px solid rgba(205, 205, 205, 0.5);
-   &:hover {
-     border: 1px solid rgba(205, 205, 205, 1);
-   }
-   &:active,
-   &:focus {
-     border: 1px solid rgb(68, 68, 68);
-     box-shadow: 0 0 0 1px rgb(68, 68, 68);
-   }
+  padding: 10px 14px;
+  outline: none;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+  &:hover {
+    border: 1px solid rgba(205, 205, 205, 1);
+  }
+  &:active,
+  &:focus {
+    border: 1px solid rgb(68, 68, 68);
+    box-shadow: 0 0 0 1px rgb(68, 68, 68);
+  }
 }
 
 .form__radio,

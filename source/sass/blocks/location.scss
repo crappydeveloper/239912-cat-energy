@@ -1,19 +1,26 @@
 .location {
-
+  padding: 25px 20px;
 }
 
 .location__paragraph {
-  padding: 27px 20px;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
 
 .location__invite {
   @include strong_text;
   font-size: 16px;
   line-height: 20px;
+  width: 50%;
 }
 
 .location__address {
   @include normal_text;
+  margin: 0;
+  padding: 0;
+  width: 50%;
   font-size: 14px;
   line-height: 20px;
 }
