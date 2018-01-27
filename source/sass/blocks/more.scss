@@ -1,0 +1,38 @@
+.more {
+  padding: 78px 20px 24px;
+}
+
+.more__text {
+  @include strong_text;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.more__note {
+  @include normal_text;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.more__button {
+  @include strong_text;
+  padding: 9px 0 13px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  background-color: #f2f2f2;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}

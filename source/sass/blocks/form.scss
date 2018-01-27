@@ -1,0 +1,105 @@
+.form__cat-information {
+  padding: 23px 20px;
+  border-bottom: 1px solid #ededed;
+}
+
+.form__purpose {
+  padding: 20px;
+  border-bottom: 1px solid #ededed;
+}
+
+.form__contacts {
+  padding: 30px 20px;
+}
+
+.form__heading {
+  @include strong_text;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.form__comments {
+  padding: 10px 20px;
+}
+
+.form__about-cat {
+  padding: 10px 14px;
+  outline: none;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+  resize: none;
+
+  &:hover {
+    border: 1px solid rgba(205, 205, 205, 1);
+  }
+
+  &:active,
+  &:focus {
+    border: 1px solid rgb(68, 68, 68);
+    box-shadow: 0 0 0 1px rgb(68, 68, 68);
+  }
+}
+
+.form__extra {
+  padding: 10px 20px 32px;
+}
+
+.form__note {
+  @include normal_text;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__link {
+  @include strong_text;
+  font-style: 16px;
+  line-height: 20px;
+  border: none;
+  color: #ffffff;
+  padding: 9px 0 13px;
+  background-color: $main_color;
+
+  &:hover {
+    background-color: $main_color_hover;
+  }
+
+  &:active {
+    color: $text_color_active;
+  }
+}
+
+.form input,
+.form label,
+.form textarea {
+  @include strong_text;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+}
+
+.form input {
+  padding: 10px 14px;
+  outline: none;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+
+  &:hover {
+    border: 1px solid rgba(205, 205, 205, 1);
+  }
+
+  &:active,
+  &:focus {
+    border: 1px solid rgb(68, 68, 68);
+    box-shadow: 0 0 0 1px rgb(68, 68, 68);
+  }
+}
+
+.form__radio,
+.form__checkbox {
+  display: none;
+}
+
+.form__radio:active + label,
+.form__checkbox:active + label {
+  opacity: 0.3;
+}

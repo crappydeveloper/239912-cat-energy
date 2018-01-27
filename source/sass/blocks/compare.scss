@@ -1,0 +1,13 @@
+.compare {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.compare__paragraph {
+  @include strong_text;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+}

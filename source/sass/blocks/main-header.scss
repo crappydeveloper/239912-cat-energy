@@ -1,0 +1,25 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  width: $mobile_width;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet_width) {
+    padding: 0 30px;
+    width: $tablet_width;
+  }
+
+  @media (min-width: $desktop_width) {
+    width: $desktop_width;
+  }
+}
+
+.main-header__logo {
+  text-decoration: none;
+  display: flex;
+
+  img:first-child {
+    margin-right: 55px;
+  }
+}

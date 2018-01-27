@@ -1,0 +1,11 @@
+@mixin normal_text() {
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  color: $normal_text;
+}
+
+@mixin strong_text() {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: $strong_text;
+}

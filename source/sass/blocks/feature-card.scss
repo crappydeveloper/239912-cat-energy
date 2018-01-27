@@ -1,0 +1,21 @@
+.feature-card {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.feature-card__image-wrapper {
+  flex-shrink: 0;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  padding: 15px;
+  background-color: $main_color;
+}
+
+.feature-card__paragraph {
+  @include normal_text;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+}

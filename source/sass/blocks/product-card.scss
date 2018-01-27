@@ -1,0 +1,37 @@
+.product-card {
+  padding: 20px 0 24px;
+}
+
+.product-card__name {
+  @include strong_text;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.product-card__information {
+  @include normal_text;
+  border-collapse: collapse;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.product-card__link {
+  @include strong_text;
+  padding: 9px 0 13px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: $main_color;
+  color: #ffffff;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $main_color_hover;
+  }
+
+  &:active {
+    color: $text_color_active;
+  }
+}

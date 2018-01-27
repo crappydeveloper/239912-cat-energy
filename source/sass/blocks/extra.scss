@@ -1,0 +1,30 @@
+.extra {
+  padding: 30px 20px 35px;
+}
+
+.extra__heading {
+  @include strong_text;
+  font-style: 24px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.extra__list {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 39px;
+  padding: 0;
+}
+
+.extra__special {
+  background-color: $main_color;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.extra__paragraph {
+  @include normal_text;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}

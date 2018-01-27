@@ -1,0 +1,43 @@
+.extra-card {
+  padding: 14px 0 17px;
+  border-bottom: 1px solid #cdcdcd;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+}
+
+.extra-card__name {
+  @include strong_text;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.extra-card__table {
+  @include normal_text;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 14px;
+  border-collapse: collapse;
+}
+
+.extra-card__button {
+  @include strong_text;
+  padding: 9px 0 13px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: $main_color;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $main_color_hover;
+  }
+
+  &:active {
+    color: $text_color_active;
+  }
+}
