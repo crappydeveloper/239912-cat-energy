@@ -8,7 +8,6 @@
 }
 
 .links__item {
-
   &:nth-child(2) {
     margin: 0 40px;
   }
@@ -16,9 +15,7 @@
 
 .links__link {
   text-decoration: none;
-}
 
-.links__link {
   path {
     fill: #666666;
   }
