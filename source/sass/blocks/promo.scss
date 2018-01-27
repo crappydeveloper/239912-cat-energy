@@ -2,20 +2,19 @@
   display: flex;
   flex-direction: column;
   padding: 32px 20px 0;
-  background-image: linear-gradient(to bottom, #65a93c 0%, #65a93c 270px, transparent 270px);
-  background-image: url('../img/index-background-mobile@1x.jpg');
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #65a93c 0%, #65a93c 270px, transparent 270px);
   background-repeat: no-repeat;
 }
 
 .promo__heading {
   margin: 0;
   margin-bottom: 20px;
-  font-family: 'Oswald';
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   text-align: center;
   font-weight: normal;
   line-height: 36px;
-  color: #ffffff ;
+  color: #ffffff;
 }
 
 .promo__paragraph {
@@ -33,16 +32,18 @@
 }
 
 .promo__link {
-  width: 100%;
   @include strong_text;
+  width: 100%;
   padding: 15px 0 14px 0;
   text-align: center;
   text-decoration: none;
   background-color: $main_color;
   color: #ffffff;
+
   &:hover {
     background-color: $main_color_hover;
   }
+
   &:active {
     color: $text_color_active;
   }

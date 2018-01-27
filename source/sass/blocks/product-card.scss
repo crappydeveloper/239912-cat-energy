@@ -16,14 +16,6 @@
   line-height: 16px;
 }
 
-.product-card__row {
-
-}
-
-.product-card__cell {
-
-}
-
 .product-card__link {
   @include strong_text;
   padding: 9px 0 13px;
@@ -33,10 +25,12 @@
   background-color: $main_color;
   color: #ffffff;
   cursor: pointer;
+
   &:hover,
   &:focus {
     background-color: $main_color_hover;
   }
+
   &:active {
     color: $text_color_active;
   }

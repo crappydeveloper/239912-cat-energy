@@ -2,9 +2,9 @@
 @import "normalize";
 @import "variables";
 @import "mixins";
-
+//GLOBAL_STYLES
 @import "global";
-
+//INDEX.HTML
 @import "./blocks/main-header";
 @import "./blocks/main-nav";
 @import "./blocks/dropdown";
@@ -18,13 +18,13 @@
 @import "./blocks/location";
 @import "./blocks/main-footer";
 @import "./blocks/links";
-
+//CATALOG.HTML
 @import "./blocks/title";
 @import "./blocks/production";
 @import "./blocks/product-card";
 @import "./blocks/more";
 @import "./blocks/extra";
 @import "./blocks/extra-card";
-
+//FORM.HTML
 @import "./blocks/program";
 @import "./blocks/form";
