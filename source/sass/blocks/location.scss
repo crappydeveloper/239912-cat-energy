@@ -1,12 +1,28 @@
 .location {
-  padding: 25px 20px;
+  position: relative;
 }
 
 .location__paragraph {
   display: flex;
   flex-direction: row;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding: 25px 20px;
+
+  @media (min-width: $tablet_width) {
+    justify-content: space-between;
+    width: $tablet_width;
+    padding: 64px 72px;
+  }
+
+  @media (min-width: $desktop_width) {
+    //position: absolute;
+    top: 95px;
+    left: 110px;
+    width: 570px;
+    padding: 64px 0 64px 77px;
+  }
 }
 
 .location__invite {
@@ -14,13 +30,48 @@
   font-size: 16px;
   line-height: 20px;
   width: 50%;
+
+  @media (min-width: $tablet_width) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop_width) {
+    margin-right: 40px;
+  }
 }
 
 .location__address {
   @include normal_text;
+  position: relative;
   margin: 0;
   padding: 0;
   width: 50%;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet_width) {
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop_width) {
+    text-align: left;
+  }
+}
+
+.location__saintp {
+  @media (min-width: $tablet_width) {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    white-space: nowrap;
+    padding-right: 5px;
+  }
+
+  @media (min-width: $desktop_width) {
+    top: 50px;
+    left: 0;
+  }
 }

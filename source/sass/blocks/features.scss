@@ -1,5 +1,20 @@
 .features {
   padding: 20px 20px 22px;
+  margin: 0 auto;
+  width: 320px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet_width) {
+    width: $tablet_width;
+    height: 780px;
+    padding: 55px 30px 105px;
+  }
+
+  @media (min-width: $desktop_width) {
+    width: $desktop_width;
+    height: 450px;
+    padding: 75px 110px;
+  }
 }
 
 .features__heading {
@@ -9,6 +24,12 @@
   text-transform: none;
   font-size: 36px;
   line-height: 60px;
+
+  @media (min-width: $tablet_width) {
+    margin-bottom: 75px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .features__list {
@@ -17,8 +38,18 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet_width) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .features__feature-card {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet_width) {
+    margin-bottom: 57px;
+  }
 }

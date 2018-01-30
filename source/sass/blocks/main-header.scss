@@ -1,17 +1,19 @@
 .main-header {
   display: flex;
   justify-content: space-between;
-  width: $mobile_width;
+  width: 320px;
+  box-sizing: border-box;
   padding: 0 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet_width) {
-    padding: 0 30px;
     width: $tablet_width;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop_width) {
     width: $desktop_width;
+    padding: 0 110px;
   }
 }
 
