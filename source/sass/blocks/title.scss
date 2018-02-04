@@ -1,7 +1,27 @@
 .title {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+
   @include strong_text;
   font-size: 36px;
   line-height: 60px;
+  text-align: left;
   text-transform: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  @media (min-width: $tablet_width) {
+    font-size: 60px;
+    line-height: 60px;
+    border: none;
+    width: $tablet_width;
+    padding: 60px 30px 15px;
+  }
+
+  @media (min-width: $desktop_width) {
+    width: $desktop_width;
+    padding: 70px 110px 0;
+    margin-bottom: 80px;
+  }
 }

@@ -1,24 +1,105 @@
 .product-card {
-  padding: 20px 0 24px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #dedede;
+
+  @media (min-width: $tablet_width) {
+    justify-content: flex-end;
+    width: 324px;
+    min-height: 513px;
+    padding: 0 38px 40px;
+    border: none;
+    background-image: linear-gradient(to top, #f2f2f2 0%, #f2f2f2 431px, transparent 431px);
+  }
+
+  @media (min-width: $desktop_width) {
+    width: 245px;
+  }
+}
+
+.product-card__product {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet_width) {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.product-card__product a {
+  @media (min-width: $tablet_width) {
+    margin-bottom: 39px;
+  }
+}
+
+.product-card__text {
+  box-sizing: border-box;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+
+  @media (min-width: $tablet_width) {
+    width: 100%;
+  }
 }
 
 .product-card__name {
+  width: 80px;
+  margin-bottom: 13px;
+
   @include strong_text;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+
+  @media (min-width: $tablet_width) {
+    width: 135px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+  }
 }
 
 .product-card__information {
+  width: 100%;
+
   @include normal_text;
   border-collapse: collapse;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $tablet_width) {
+    font-size: 16px;
+    margin-bottom: 33px;
+  }
+}
+
+.product-card__row {
+  width: 100%;
+
+  @media (min-width: $tablet_width) {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.product-card__cell {
+  @media (min-width: $tablet_width) {
+    padding: 8px 0 6px;
+  }
+}
+
+.product-card__cell:nth-child(2n) {
+  text-align: right;
 }
 
 .product-card__link {
   @include strong_text;
-  padding: 9px 0 13px;
+  padding: 10px 0;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
@@ -33,5 +114,11 @@
 
   &:active {
     color: $text_color_active;
+  }
+}
+
+.production__more {
+  @media (min-width: $tablet_width) {
+    margin-bottom: 58px;
   }
 }

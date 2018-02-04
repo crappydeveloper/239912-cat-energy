@@ -1,12 +1,50 @@
+.program {
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 320px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet_width) {
+    width: $tablet_width;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop_width) {
+    width: $desktop_width;
+    padding: 0 110px;
+  }
+}
+
 .program__title {
+  margin: 0;
+  margin-bottom: 25px;
+
   @include strong_text;
   font-size: 36px;
   line-height: 60px;
   text-transform: none;
+
+  @media (min-width: $tablet_width) {
+    margin-bottom: 60px;
+    font-size: 60px;
+  }
 }
 
 .program__paragraph {
+  margin: 0;
+  margin-bottom: 16px;
+
   @include strong_text;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 18px;
+
+  @media (min-width: $tablet_width) {
+    padding-left: 40px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop_width) {
+    margin-bottom: 65px;
+  }
 }

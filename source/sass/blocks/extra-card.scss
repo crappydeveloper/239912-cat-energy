@@ -1,28 +1,102 @@
 .extra-card {
+  display: flex;
+  flex-direction: column;
   padding: 14px 0 17px;
   border-bottom: 1px solid #cdcdcd;
 
+  @media (min-width: $tablet_width) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 25px 36px 27px 37px;
+    border: 1px solid #e6e6e6;
+    border-top: none;
+  }
+
+  @media (min-width: $desktop_width) {
+    padding: 16px 0;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
   &:first-child {
     border-top: 1px solid #cdcdcd;
+
+    @media (min-width: $tablet_width) {
+      border-color: #e6e6e6;
+    }
+
+    @media (min-width: $desktop_width) {
+      border-color: #cdcdcd;
+    }
   }
 }
 
 .extra-card__name {
-  @include strong_text;
+  margin: 0;
   margin-bottom: 15px;
+
+  @include strong_text;
   font-size: 16px;
   line-height: 16px;
+
+  @media (min-width: $tablet_width) {
+    padding-bottom: 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop_width) {
+    width: 245px;
+    margin: 0;
+    margin-right: 80px;
+    padding: 0;
+  }
 }
 
 .extra-card__table {
-  @include normal_text;
+  width: 100%;
   margin-bottom: 15px;
+
+  @include normal_text;
   font-size: 14px;
   line-height: 14px;
   border-collapse: collapse;
+
+  @media (min-width: $tablet_width) {
+    width: auto;
+    margin-left: auto;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop_width) {
+    width: 285px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 40px;
+  }
+}
+
+.extra-card__cell {
+  @media (min-width: $tablet_width) {
+    min-width: 95px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop_width) {
+    min-width: none;
+    text-align: left;
+  }
+}
+
+.extra-card__cell:nth-child(2n) {
+  text-align: right;
 }
 
 .extra-card__button {
+  font-family: "Oswald", "Arial", sans-serif;
+
   @include strong_text;
   padding: 9px 0 13px;
   font-size: 16px;
@@ -31,6 +105,15 @@
   background-color: $main_color;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $tablet_width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop_width) {
+    width: auto;
+    flex-grow: 1;
+  }
 
   &:hover,
   &:focus {

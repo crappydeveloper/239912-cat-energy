@@ -1,26 +1,95 @@
 .more {
+  position: relative;
   padding: 78px 20px 24px;
+  border-bottom: 1px solid #dedede;
+
+  @media (min-width: $tablet_width) {
+    display: flex;
+    box-sizing: border-box;
+    height: 431px;
+    width: 324px;
+    padding: 165px 37px 40px;
+    border: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop_width) {
+    width: 245px;
+  }
+}
+
+.more__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .more__text {
   @include strong_text;
+  margin: 0 auto;
   margin-bottom: 10px;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet_width) {
+    width: 145px;
+    margin-bottom: 26px;
+    font-size: 20px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    left: calc(50% - 14px);
+    top: 40px;
+    background-color: #d3d3d3;
+
+    @media (min-width: $tablet_width) {
+      width: 60px;
+      left: calc(50% - 29px);
+      top: 83px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 30px;
+    left: 50%;
+    top: 26px;
+    background-color: #d3d3d3;
+
+    @media (min-width: $tablet_width) {
+      height: 60px;
+      left: 50%;
+      top: 54px;
+    }
+  }
 }
 
 .more__note {
   @include normal_text;
+  margin: 0 auto;
   margin-bottom: 25px;
   text-align: center;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $tablet_width) {
+    width: 175px;
+    font-size: 16px;
+  }
 }
 
 .more__button {
+  font-family: "Oswald", "Arial", sans-serif;
+
   @include strong_text;
-  padding: 9px 0 13px;
+  padding: 10px 0 10px;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
@@ -34,5 +103,9 @@
 
   &:active {
     color: rgba(0, 0, 0, 0.3);
+  }
+
+  @media (min-width: $tablet_width) {
+    margin-top: auto;
   }
 }

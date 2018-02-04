@@ -9,6 +9,7 @@
   width: 320px;
   margin: 0 auto;
   padding: 25px 20px;
+  background-color: #f2f2f2;
 
   @media (min-width: $tablet_width) {
     justify-content: space-between;
@@ -17,11 +18,11 @@
   }
 
   @media (min-width: $desktop_width) {
-    //position: absolute;
     top: 95px;
     left: 110px;
     width: 570px;
     padding: 64px 0 64px 77px;
+    background-color: #ffffff;
   }
 }
 
