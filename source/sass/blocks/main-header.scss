@@ -1,27 +1,39 @@
 .main-header {
   display: flex;
   justify-content: space-between;
-  width: 320px;
-  box-sizing: border-box;
-  padding: 0 20px;
-  margin: 0 auto;
+  align-items: center;
+  height: 66px;
+  border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: $tablet_width) {
-    width: $tablet_width;
-    padding: 0 30px;
+    border: none;
   }
 
-  @media (min-width: $desktop_width) {
-    width: $desktop_width;
-    padding: 0 110px;
-  }
+  //@media (min-width: $desktop_width) {
+  //}
 }
 
 .main-header__logo {
   text-decoration: none;
   display: flex;
+  align-items: center;
 
   img:first-child {
     margin-right: 55px;
+  }
+}
+
+.main-header__burger {
+  width: 24px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  background-position: center;
+  background-color: inherit;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet_width) {
+    display: none;
   }
 }

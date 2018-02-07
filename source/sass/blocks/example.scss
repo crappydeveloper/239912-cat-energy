@@ -1,9 +1,21 @@
 .example {
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet_width) {
+    background: none;
+    background-image: linear-gradient(to top, #eaeaea 0%, #eaeaea 460px, transparent 460px);
+  }
+
+  @media (min-width: $desktop_width) {
+    background-image: linear-gradient(to top, #eaeaea 0%, #eaeaea 435px, transparent 435px);
+  }
+}
+
+.example__wrapper {
   display: flex;
   flex-direction: column;
   padding: 20px 20px 38px;
   margin: 0 auto;
-  background-color: #f2f2f2;
   width: 320px;
   box-sizing: border-box;
 
@@ -12,15 +24,12 @@
     height: 1080px;
     width: $tablet_width;
     padding: 50px 30px 68px;
-    background: none;
-    background-image: linear-gradient(to top, #eaeaea 0%, #eaeaea 460px, transparent 460px);
   }
 
   @media (min-width: $desktop_width) {
     width: $desktop_width;
     height: 665px;
     padding: 75px 110px;
-    background-image: linear-gradient(to top, #eaeaea 0%, #eaeaea 435px, transparent 435px);
   }
 }
 
