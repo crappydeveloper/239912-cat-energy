@@ -5,9 +5,9 @@
 //GLOBAL_STYLES
 @import "global";
 //INDEX.HTML
+@import "./blocks/header-wrapper";
 @import "./blocks/main-header";
 @import "./blocks/main-nav";
-@import "./blocks/dropdown";
 @import "./blocks/promo";
 @import "./blocks/way";
 @import "./blocks/way-card";
