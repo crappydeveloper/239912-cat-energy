@@ -23,6 +23,24 @@
   }
 }
 
+.main-header__image {
+  @media (min-width: $tablet_width) {
+    width: 173px;
+    height: 58px;
+  }
+
+  @media (min-width: $desktop_width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.main-header__energy {
+  @media (min-width: $tablet_width) {
+    display: none;
+  }
+}
+
 .main-header__burger {
   width: 24px;
   height: 18px;
