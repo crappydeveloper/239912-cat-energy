@@ -10,10 +10,12 @@
     justify-content: space-between;
     width: $tablet_width;
     padding: 0 30px;
+    padding-top: 21px;
   }
 
   @media (min-width: $desktop_width) {
     width: $desktop_width;
     padding: 0 110px;
+    padding-top: 51px;
   }
 }

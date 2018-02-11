@@ -117,12 +117,16 @@
 
 .example__result {
   position: relative;
-  width: 162px;
+  width: 124px;
   padding: 15px 0;
   text-align: center;
   font-weight: bold;
   border: 1px solid rgb(205, 205, 205);
   border-radius: 3px;
+
+  @media (min-width: $tablet_width) {
+    width: 162px;
+  }
 
   @media (min-width: $desktop_width) {
     margin-right: 42px;
@@ -196,8 +200,30 @@
   }
 }
 
+.example__range-block {
+  @media (min-width: $desktop_width) {
+    display: flex;
+    position: relative;
+    width: 570px;
+  }
+}
+
+.example__cat {
+  @media (min-width: $desktop_width) {
+    position: absolute;
+    right: -100px;
+    bottom: 60px;
+  }
+}
+
 .example__compare {
   @media (min-width: $tablet_width) {
     margin-top: auto;
+  }
+
+  @media (min-width: $desktop_width) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 }

@@ -10,8 +10,12 @@
     <header class="header-wrapper">
       <div class="main-header">
         <a href="" class="main-header__logo">
-          <img width="33" height="38" src="../img/icon-logo-mobile.svg" alt="Логотип">
-          <img width="110" height="18" src="../img/logo-mobile-header.svg" alt="Кэт энерджи">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="../img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
+            <img class="main-header__image" width="33" height="38" src="../img/icon-logo-mobile.svg" alt="Логотип">
+          </picture>
+          <img class="main-header__energy" width="110" height="18" src="../img/logo-mobile-header.svg" alt="Кэт энерджи">
         </a>
         <button class="main-header__burger">
           <span class="visually-hidden">Меню навигации</span>
@@ -34,6 +38,7 @@
     <main>
       <section class="promo">
         <div class="promo__wrapper">
+          <div class="promo__background"></div>
           <h1 class="promo__heading">Функциональное питание для котов</h1>
           <p class="promo__paragraph">Занялся собой? Займись котом!</p>
           <a href="form.html" class="promo__link">Подобрать программу</a>
@@ -44,12 +49,12 @@
           <h2 class="visually-hidden">Выбор цели питания</h2>
           <ul class="way__list">
             <li class="way-card way__way-card">
-              <h3 class="way-card__heading">Похудение</h3>
+              <h3 class="way-card__heading way-card__heading--slim">Похудение</h3>
               <p class="way-card__paragraph way-card__paragraph--wide">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a href="" class="way-card__link">Каталог Slim</a>
             </li>
             <li class="way-card way__way-card">
-              <h3 class="way-card__heading">Набор массы</h3>
+              <h3 class="way-card__heading way-card__heading--pro">Набор массы</h3>
               <p class="way-card__paragraph">Заработать авторитет среди дворовых котов и даже собак?
   Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a href="" class="way-card__link">Каталог pro</a>
@@ -62,26 +67,26 @@
           <h2 class="features__heading">Как это работает</h2>
           <ul class="features__list">
             <li class="feature-card features__feature-card">
-              <div class="feature-card__image-wrapper">
-                <img width="26" height="29" src="http://via.placeholder.com/280x270" alt="Лист дерева">
+              <div class="feature-card__image-wrapper feature-card__image-wrapper--1">
+                <img width="50" height="50" src="img/advantage-leaf@1x.png" srcset="img/advantage-leaf@2x.png" alt="Лист дерева">
               </div>
               <p class="feature-card__paragraph">Функциональное питание содержит только полезные питательные вещества.</p>
             </li>
             <li class="feature-card features__feature-card">
-              <div class="feature-card__image-wrapper">
-                <img width="29" height="31" src="http://via.placeholder.com/29x31" alt="Ванночка с водой">
+              <div class="feature-card__image-wrapper feature-card__image-wrapper--2">
+                <img width="50" height="50" src="img/advantage-powder@1x.png" srcset="img/advantage-powder@2x.png" alt="Ванночка с водой">
               </div>
               <p class="feature-card__paragraph">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
             <li class="feature-card features__feature-card">
-              <div class="feature-card__image-wrapper">
-                <img width="23" height="30" src="http://via.placeholder.com/23x30" alt="Вилка и нож">
+              <div class="feature-card__image-wrapper feature-card__image-wrapper--3">
+                <img width="50" height="50" src="img/advantage-dining@1x.png" srcset="img/advantage-dining@2x.png" alt="Вилка и нож">
             </div>
             <p class="feature-card__paragraph">Замените один-два приема обычной еды на наше фунцкциональное питание.</p>
             </li>
             <li class="feature-card features__feature-card">
-              <div class="feature-card__image-wrapper">
-                <img width="26" height="31" src="http://via.placeholder.com/26x31" alt="Настольные часы">
+              <div class="feature-card__image-wrapper feature-card__image-wrapper--4">
+                <img width="50" height="50" src="img/advantage-clock@1x.png" srcset="img/advantage-clock@2x.png" alt="Настольные часы">
               </div>
               <p class="feature-card__paragraph">Уже через месяц наслаждайтесь изменениями к лучшему <span>вашего</span>питомца!</p>
             </li>
@@ -111,8 +116,12 @@
                 <p class="example__cost">Затраты на питание: <span>15 000 руб.</span></p>
               </div>
             </div>
-            <div class="exmple__range-block">
-              <img width="311" height="232" src="http://via.placeholder.com/311x232" alt="Котик">
+            <div class="example__range-block">
+              <picture class="example__cat">
+                <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Котик">
+              </picture>
               <div class="compare example__compare">
                 <p class="compare__paragraph">Было</p>
                 <input type="checkbox" class="compare__range">
@@ -129,7 +138,13 @@
             <strong class="location__invite">Приглашаем <br> к сотрудничеству <br> дилеров!</strong>
             <p class="location__address">ул. Большая <br> Конюшенная, д. 19/8 <br><span class="location__saintp">Санкт-Петербург</span></p>
           </div>
-          <div class="map location__map"></div>
+          <div class="map location__map">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+              <img class="map__picture" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@1x.png 2x" alt="Карта">
+            </picture>
+          </div>
         </div>
       </section>
     </main>
