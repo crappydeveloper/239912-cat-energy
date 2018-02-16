@@ -43,5 +43,9 @@
   ],
   "engines": {
     "node": "8.9"
+  },
+  "dependencies": {
+    "gulp-posthtml": "^3.0.4",
+    "posthtml-include": "^1.1.0"
   }
 }

@@ -12,6 +12,8 @@ var webp = require("gulp-webp");
 var svgstore = require('gulp-svgstore');
 var run = require('run-sequence');
 var del = require("del");
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
 var server = require("browser-sync").create();
 
 gulp.task("style", () => {
@@ -27,6 +29,14 @@ gulp.task("style", () => {
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
+
+gulp.task("html", () => {
+  gulp.src("source/*.html")
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("build"));
+})
 
 gulp.task("images", () => {
   gulp.src("source/img/**/*.{png,jpg,svg}")
@@ -54,7 +64,7 @@ gulp.task("sprite", () => {
 });
 
 gulp.task("build", (done) => {
-  run("clean", "copy", "style", "sprite", done)
+  run("clean", "copy", "style", "sprite", "html", done)
 });
 
 gulp.task("copy", () => {
