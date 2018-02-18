@@ -26,11 +26,15 @@
 }
 
 .main-footer__logo {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   text-align: center;
 
   @media (min-width: $tablet_width) {
     margin: 0;
+  }
+
+  @media (min-width: $desktop_width) {
+    padding-top: 13px;
   }
 }
 
@@ -51,6 +55,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet_width) {
+    padding-top: 14px;
+  }
 }
 
 .main-footer__link {
@@ -59,12 +67,18 @@
   font-size: 16px;
   line-height: 16px;
 
+  @media(min-width: $tablet_width) {
+    margin-left: 25px;
+  }
+
   path {
     fill: #666666;
   }
 
   &:hover,
   &:focus {
+    color: $main_color;
+
     path {
       fill: $main_color;
     }
@@ -72,5 +86,9 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  svg {
+    fill: #666666;
   }
 }

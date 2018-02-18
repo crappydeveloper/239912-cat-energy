@@ -2,20 +2,33 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 22px 11px 20px 0;
+  padding: 22px 11px 19px 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet_width) {
+    align-items: center;
     padding: 0;
     margin: 0;
+    margin-bottom: 7px;
+    margin-left: 47px;
     border: none;
+  }
+
+  @media (min-width: $desktop_width) {
+    padding-top: 15px;
   }
 }
 
 .links__item {
   &:nth-child(2) {
-    margin: 0 40px;
+    margin: 2px 40px 0 38px;
+  }
+
+  @media (min-width: $tablet_width) {
+    &:nth-child(2) {
+      margin: 2px 31px 0 26px;
+    }
   }
 }
 
@@ -37,3 +50,18 @@
     opacity: 0.3;
   }
 }
+
+
+ .links__svg-mobile {
+   @media (min-width: $tablet_width) {
+     display: none;
+   }
+ }
+
+ .links__svg {
+   display: none;
+
+   @media (min-width: $tablet_width) {
+     display: inline-block;
+   }
+ }
