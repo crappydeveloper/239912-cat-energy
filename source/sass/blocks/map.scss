@@ -4,7 +4,7 @@
   height: 362px;
   background-color: #f2f2f2;
 
-  &:before {
+  &::before {
     position: absolute;
     top: 153px;
     left: 40%;
@@ -18,7 +18,7 @@
   @media (min-width: $tablet_width) {
     height: 396px;
 
-    &:before {
+    &::before {
       top: 147px;
       left: 43%;
       width: 113px;
@@ -30,7 +30,7 @@
   @media (min-width: $desktop_width) {
     height: 400px;
 
-    &:before {
+    &::before {
       top: 151px;
       left: 69.5%;
     }
