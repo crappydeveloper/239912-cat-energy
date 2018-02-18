@@ -1,20 +1,22 @@
 .compare {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  position: relative;
 
   @media (min-width: $tablet_width) {
     width: 570px;
     margin: 0 auto;
-    margin-top: auto;
+    margin-top: 17px;
     display: flex;
-    justify-content: space-between;
   }
 
 
   @media (min-width: $desktop_width) {
     justify-content: space-between;
     width: 100%;
+    align-self: flex-end;
+    margin-bottom: 65px;
   }
 }
 
@@ -30,5 +32,54 @@
     font-size: 20px;
     line-height: 20px;
     border-bottom: 1px dashed rgba(#000000, 0.23);
+  }
+}
+
+.compare__range {
+  display: none;
+}
+
+.compare_range-label {
+  &::before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 55px;
+    width: 84px;
+    height: 14px;
+    border: 1px solid #cdcdcd;
+    border-radius: 6px;
+    background-color: #ffffff;
+
+    @media (min-width: $tablet_width) {
+      width: 428px;
+      height: 6px;
+      top: 7px;
+      left: 70px;
+      background-color: #dcdcdc;
+      border: none;
+    }
+  }
+
+  &::after {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    top: -6px;
+    left: 270px;
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #68b738;
+
+    @media (min-width: $tablet_width) {
+      width: 32px;
+      height: 32px;
+      background-color: #68b738;
+      border: 12px solid #ffffff;
+      border-radius: 50%;
+      box-shadow: 0 0 0 1px #cdcdcd, 1px 2px 3px 0 #cdcdcd;
+    }
   }
 }

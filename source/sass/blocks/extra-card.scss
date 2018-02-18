@@ -7,13 +7,14 @@
   @media (min-width: $tablet_width) {
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
     padding: 25px 36px 27px 37px;
     border: 1px solid #e6e6e6;
     border-top: none;
   }
 
   @media (min-width: $desktop_width) {
-    padding: 16px 0;
+    padding: 16px 0 15px;
     align-items: center;
     border: none;
     border-bottom: 1px solid #cdcdcd;
@@ -34,14 +35,14 @@
 
 .extra-card__name {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 
   @include strong_text;
   font-size: 16px;
   line-height: 16px;
 
   @media (min-width: $tablet_width) {
-    padding-bottom: 25px;
+    padding-bottom: 14px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -72,15 +73,22 @@
 
   @media (min-width: $desktop_width) {
     width: 285px;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 40px;
+    margin: 8px 39px 0 3px;
+  }
+}
+
+.extra-card:nth-child(2) {
+  td:last-child {
+    padding-right: 8px;
   }
 }
 
 .extra-card__cell {
+  padding: 0;
+
   @media (min-width: $tablet_width) {
     min-width: 95px;
+    padding-bottom: 2px;
     text-align: right;
   }
 
@@ -98,7 +106,7 @@
   font-family: "Oswald", "Arial", sans-serif;
 
   @include strong_text;
-  padding: 9px 0 13px;
+  padding: 10px 0;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;

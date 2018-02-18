@@ -9,7 +9,6 @@
   @media (min-width: $tablet_width) {
     justify-content: flex-end;
     width: 324px;
-    min-height: 513px;
     padding: 0 38px 40px;
     border: none;
     background-image: linear-gradient(to top, #f2f2f2 0%, #f2f2f2 431px, transparent 431px);
@@ -23,6 +22,7 @@
 .product-card__product {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: -2px;
 
   @media (min-width: $tablet_width) {
     align-items: center;
@@ -32,7 +32,7 @@
 
 .product-card__product a {
   @media (min-width: $tablet_width) {
-    margin-bottom: 39px;
+    margin-bottom: 17px;
   }
 }
 
@@ -41,16 +41,17 @@
   width: 50%;
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 22px;
 
   @media (min-width: $tablet_width) {
     width: 100%;
+    padding-top: 19px;
   }
 }
 
 .product-card__name {
   width: 80px;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 
   @include strong_text;
   font-size: 16px;
@@ -74,8 +75,9 @@
   line-height: 16px;
 
   @media (min-width: $tablet_width) {
+    line-height: 14px;
     font-size: 16px;
-    margin-bottom: 33px;
+    margin-bottom: 36px;
   }
 }
 
@@ -88,8 +90,10 @@
 }
 
 .product-card__cell {
+  padding: 0;
+
   @media (min-width: $tablet_width) {
-    padding: 8px 0 6px;
+    padding: 9px 0 8px;
   }
 }
 

@@ -21,12 +21,23 @@
   img:first-child {
     margin-right: 55px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-header__image {
+  margin-right: 53px;
+
   @media (min-width: $tablet_width) {
     width: 173px;
     height: 58px;
+    margin-right: 0;
   }
 
   @media (min-width: $desktop_width) {
