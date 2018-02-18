@@ -47,81 +47,6 @@
       margin-bottom: 18px;
     }
   }
-
-  input[type="radio"] + label {
-    position: relative;
-  }
-
-  input[type="radio"]:checked + label {
-    &::before {
-      position: absolute;
-      content: "";
-      left: -44px;
-      top: -6px;
-      width: 28px;
-      height: 28px;
-      background-color: #68b738;
-      border: 8px solid #ffffff;
-      border-radius: 50%;
-      box-shadow: 0 0 1px 0 #cecece;
-      box-sizing: border-box;
-    }
-
-    @media (min-width: $tablet_width) {
-      &::before {
-        left: -58px;
-        top: -8px;
-        width: 38px;
-        height: 38px;
-        border: 10px solid #ffffff;
-      }
-    }
-  }
-
-  input[type="checkbox"] + label {
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: -6px;
-      left: 1px;
-      width: 30px;
-      height: 30px;
-      box-sizing: border-box;
-      border: 1px solid #cfcfcf;
-    }
-
-    @media (min-width: $tablet_width) {
-      &::after {
-        top: -9px;
-        width: 40px;
-        height: 40px;
-      }
-    }
-  }
-
-  input[type="checkbox"]:checked + label {
-    &::before {
-      position: absolute;
-      left: 12px;
-      top: -3px;
-      width: 8px;
-      height: 18px;
-      background-color: transparent;
-      border: 2px solid #68b738;
-      border-bottom: none;
-      border-right: none;
-      transform: rotate(-136deg);
-      content: "";
-    }
-
-    @media (min-width: $tablet_width) {
-      &::before {
-        left: 17px;
-      }
-    }
-  }
 }
 
 .form__input {
@@ -168,6 +93,7 @@
 }
 
 .form__contacts {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 29px 0 27px 0;
@@ -188,10 +114,45 @@
   }
 
   .form__heading {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 83px;
+      height: 3px;
+      right: 0;
+      top: 45px;
+      background-color: #68b738;
+      z-index: -1;
+    }
+
+    @media (min-width: $tablet_width) {
+      &::after {
+        position: absolute;
+        content: "";
+        width: 90px;
+        height: 3px;
+        right: 0;
+        top: 93px;
+        background-color: #68b738;
+        z-index: -1;
+      }
+    }
+
     @media (min-width: $desktop_width) {
       position: absolute;
       top: -1px;
       left: -2px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 670px;
+        height: 3px;
+        right: -708px;
+        top: 23px;
+        background-color: #68b738;
+        z-index: -1;
+      }
     }
   }
 
@@ -271,6 +232,7 @@ label[for="owner-number"] {
 }
 
 .form__comments {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -283,6 +245,45 @@ label[for="owner-number"] {
   @media (min-width: $desktop_width) {
     width: 100%;
     padding-top: 10px;
+  }
+
+  .form__heading {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 140px;
+      height: 3px;
+      right: 0;
+      top: 16px;
+      background-color: #68b738;
+      z-index: -1;
+    }
+
+    @media (min-width: $tablet_width) {
+      &::after {
+        position: absolute;
+        content: "";
+        width: 410px;
+        height: 3px;
+        right: 0;
+        top: 53px;
+        background-color: #68b738;
+        z-index: -1;
+      }
+    }
+
+    @media (min-width: $desktop_width) {
+      &::after {
+        position: absolute;
+        content: "";
+        width: 1000px;
+        height: 3px;
+        right: 0;
+        top: 33px;
+        background-color: #68b738;
+        z-index: -1;
+      }
+    }
   }
 }
 
@@ -318,6 +319,7 @@ label[for="owner-number"] {
 }
 
 .form__extra {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 28px 0 32px;
@@ -367,16 +369,50 @@ label[for="owner-number"] {
   .form__heading {
     margin-bottom: 41px;
 
+    &::after {
+      position: absolute;
+      content: "";
+      width: 120px;
+      height: 3px;
+      right: 0;
+      top: 42px;
+      background-color: #68b738;
+      z-index: -1;
+    }
+
     @media (min-width: $tablet_width) {
       position: absolute;
       top: 65px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 385px;
+        height: 3px;
+        right: -420px;
+        top: 22px;
+        background-color: #68b738;
+        z-index: -1;
+      }
     }
 
     @media (min-width: $desktop_width) {
       left: -2px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 978px;
+        height: 3px;
+        right: -1014px;
+        top: 22px;
+        background-color: #68b738;
+        z-index: -1;
+      }
     }
   }
 }
+
 
 .form__link {
   width: 100%;
@@ -495,4 +531,120 @@ label[for="owner-number"] {
 .form__radio:active + label,
 .form__checkbox:active + label {
   opacity: 0.3;
+}
+
+
+.program__form {
+  input[type="radio"] + label {
+    position: relative;
+  }
+
+  input[type="radio"]:checked + label {
+    &::before {
+      position: absolute;
+      content: "";
+      left: -44px;
+      top: -6px;
+      width: 28px;
+      height: 28px;
+      background-color: #68b738;
+      border: 8px solid #ffffff;
+      border-radius: 50%;
+      box-shadow: 0 0 1px 0 #cecece;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: $tablet_width) {
+      &::before {
+        left: -58px;
+        top: -8px;
+        width: 38px;
+        height: 38px;
+        border: 10px solid #ffffff;
+      }
+    }
+  }
+
+  input[type="checkbox"] + label {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -6px;
+      left: 1px;
+      width: 30px;
+      height: 30px;
+      box-sizing: border-box;
+      border: 1px solid #cfcfcf;
+    }
+
+    @media (min-width: $tablet_width) {
+      &::after {
+        top: -9px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  input[type="checkbox"]:checked + label {
+    &::before {
+      position: absolute;
+      left: 12px;
+      top: -3px;
+      width: 8px;
+      height: 18px;
+      background-color: transparent;
+      border: 2px solid #68b738;
+      border-bottom: none;
+      border-right: none;
+      transform: rotate(-136deg);
+      content: "";
+    }
+
+    @media (min-width: $tablet_width) {
+      &::before {
+        left: 17px;
+      }
+    }
+  }
+}
+
+label[for="owner-email"],
+label[for="owner-number"] {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+  }
+}
+
+label[for="owner-email"]::after {
+  right: 17px;
+  top: 16px;
+  width: 17px;
+  height: 13px;
+  background-size: 17px 13px;
+  background-image: url("../img/icon-mail.svg");
+
+  @media (min-width: $tablet_width) {
+    right: 20px;
+    top: 20px;
+  }
+}
+
+label[for="owner-number"]::after {
+  right: 16px;
+  top: 12px;
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  background-image: url("../img/icon-phone.svg");
+
+  @media (min-width: $tablet_width) {
+    right: 20px;
+    top: 18px;
+  }
 }
