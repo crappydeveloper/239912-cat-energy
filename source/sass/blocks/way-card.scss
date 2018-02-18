@@ -1,13 +1,13 @@
 .way-card {
   position: relative;
   background-color: #f2f2f2;
-  padding: 39px 20px 20px;
+  padding: 38px 20px 20px;
 
   @media (min-width: $tablet_width) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 80px 53px 63px;
+    padding: 75px 53px 63px;
   }
 
   @media (min-width: $desktop_width) {
@@ -19,13 +19,13 @@
 .way-card__heading {
   @include strong_text;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 36px;
   text-align: center;
   font-size: 24px;
   line-height: 23px;
 
   @media (min-width: $tablet_width) {
-    margin-bottom: 27px;
+    margin-bottom: 26px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -64,6 +64,16 @@
 }
 
 .way-card__heading--slim {
+  padding-left: 11px;
+
+  @media (min-width: $tablet_width) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop_width) {
+    padding-left: 22px;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -79,6 +89,7 @@
       left: auto;
       right: 92px;
       top: 80px;
+      padding-left: 0;
     }
 
     @media (min-width: $desktop_width) {
@@ -93,6 +104,14 @@
 
 .way-card__heading--pro {
   margin-left: 40px;
+
+  @media (min-width: $tablet_width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop_width) {
+    padding-left: 62px;
+  }
 
   &::after {
     position: absolute;
@@ -109,6 +128,7 @@
       left: auto;
       right: 28px;
       top: 135px;
+      bottom: 67px;
     }
 
     @media (min-width: $desktop_width) {
@@ -124,14 +144,15 @@
 .way-card__paragraph {
   @include normal_text;
   margin: 0;
-  margin-bottom: 20px;
-  padding-bottom: 23px;
+  margin-bottom: 18px;
+  padding-bottom: 22px;
   font-size: 14px;
   line-height: 18px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   @media (min-width: $tablet_width) {
-    width: 345px;
+    width: 344px;
+    margin-bottom: 34px;
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
@@ -139,6 +160,7 @@
 
   @media (min-width: $desktop_width) {
     width: auto;
+    margin-bottom: 8px;
   }
 }
 
@@ -160,8 +182,19 @@
   font-size: 16px;
   line-height: 16px;
 
+  &:hover::after {
+    width: 33px;
+    height: 11px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet_width) {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -169,13 +202,14 @@
   position: absolute;
   content: "";
   bottom: 24px;
-  left: 121px;
+  left: 116px;
   width: 24px;
   height: 11px;
+  background-repeat: no-repeat;
   background-image: url("../img/icon-right-arrow-long.svg");
 
   @media (min-width: $tablet_width) {
-    bottom: 65px;
-    left: 150px;
+    bottom: 67px;
+    left: 184px;
   }
 }

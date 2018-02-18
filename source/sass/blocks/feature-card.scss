@@ -4,6 +4,15 @@
 
   @media (min-width: $tablet_width) {
     flex-direction: column;
+    width: 324px;
+  }
+
+  @media (min-width: $desktop_width) {
+    width: auto;
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
   }
 }
 
@@ -22,7 +31,7 @@
     width: 80px;
     height: 80px;
     margin-right: 0;
-    margin-bottom: 37px;
+    margin-bottom: 30px;
     padding: 15px;
   }
 }
@@ -31,12 +40,12 @@
   @media (min-width: $tablet_width) {
     &::before {
       position: absolute;
-      left: 125px;
+      left: 118px;
       top: 0;
       z-index: -1;
       content: "1";
-      font-size: 230px;
-      line-height: 165px;
+      font-size: 280px;
+      line-height: 205px;
       color: #f2f2f2;
     }
   }
@@ -46,12 +55,12 @@
   @media (min-width: $tablet_width) {
     &::before {
       position: absolute;
-      left: 125px;
+      left: 111px;
       top: 0;
       z-index: -1;
       content: "2";
-      font-size: 230px;
-      line-height: 165px;
+      font-size: 280px;
+      line-height: 205px;
       color: #f2f2f2;
     }
   }
@@ -61,12 +70,12 @@
   @media (min-width: $tablet_width) {
     &::before {
       position: absolute;
-      left: 125px;
+      left: 113px;
       top: 0;
       z-index: -1;
       content: "3";
-      font-size: 230px;
-      line-height: 165px;
+      font-size: 280px;
+      line-height: 205px;
       color: #f2f2f2;
     }
   }
@@ -76,12 +85,12 @@
   @media (min-width: $tablet_width) {
     &::before {
       position: absolute;
-      left: 125px;
+      left: 113px;
       top: 0;
       z-index: -1;
       content: "4";
-      font-size: 230px;
-      line-height: 165px;
+      font-size: 280px;
+      line-height: 205px;
       color: #f2f2f2;
     }
   }
@@ -90,6 +99,7 @@
 .feature-card__paragraph {
   @include normal_text;
   margin: 0;
+  padding-top: 2px;
   font-size: 14px;
   line-height: 18px;
 

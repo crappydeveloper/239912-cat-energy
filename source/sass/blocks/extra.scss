@@ -2,12 +2,13 @@
   position: relative;
   width: 320px;
   box-sizing: border-box;
-  padding: 30px 20px 35px;
+  padding: 28px 20px 35px;
   margin: 0 auto;
 
   @media (min-width: $tablet_width) {
     width: $tablet_width;
-    padding: 12px 30px 0;
+    padding: 8px 30px 0;
+    margin-bottom: 76px;
   }
 
   @media (min-width: $desktop_width) {
@@ -16,7 +17,8 @@
     justify-content: space-between;
     position: relative;
     width: $desktop_width;
-    padding: 132px 110px 20px;
+    padding: 130px 110px 20px;
+    margin-bottom: 0;
   }
 }
 
@@ -29,21 +31,6 @@
   line-height: 24px;
   text-transform: none;
 
-  @media (min-width: $tablet_width) {
-    box-sizing: border-box;
-    width: 413px;
-    text-align: left;
-    padding-left: 38px;
-    font-size: 36px;
-    line-height: 36px;
-    background-color: #ffffff;
-  }
-
-  @media (min-width: $desktop_width) {
-    position: absolute;
-    top: 10px;
-  }
-
   &::after {
     position: absolute;
     content: "";
@@ -54,6 +41,34 @@
     background-color: $main_color;
     z-index: -1;
   }
+
+  @media (min-width: $tablet_width) {
+    box-sizing: border-box;
+    padding-bottom: 80px;
+    width: 413px;
+    text-align: left;
+    padding-left: 38px;
+    font-size: 36px;
+    line-height: 36px;
+    background-color: #ffffff;
+
+    &::after {
+      width: 356px;
+      top: 31px;
+    }
+  }
+
+  @media (min-width: $desktop_width) {
+    position: absolute;
+    left: 72px;
+    top: 14px;
+
+    &::after {
+      width: 900px;
+      top: 22px;
+      right: -900px;
+    }
+  }
 }
 
 .extra__list {
@@ -61,6 +76,10 @@
   margin: 0;
   margin-bottom: 39px;
   padding: 0;
+
+  @media (min-width: $tablet_width) {
+    margin-bottom: 69px;
+  }
 
   @media (min-width: $desktop_width) {
     box-sizing: border-box;
@@ -79,6 +98,7 @@
   background-color: $main_color;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  fill: #ffffff;
 
   @media (min-resolution: $retina_dpi), (min-resolution: $retina_dppx) {
     background-size: 280px 290px;
@@ -99,7 +119,7 @@
 
   @media (min-width: $desktop_width) {
     flex-direction: column;
-    height: auto;
+    height: 289px;
     width: 245px;
     padding: 65px 0 45px;
     background-size: 245px 289px;
@@ -128,14 +148,16 @@
 
   @include normal_text;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 19px;
   color: #ffffff;
 
   @media (min-width: $tablet_width) {
     text-align: left;
+    margin: 2px 29px 0 0;
   }
 
   @media (min-width: $desktop_width) {
     text-align: center;
+    margin: 0 auto;
   }
 }

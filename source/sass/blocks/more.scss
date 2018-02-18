@@ -1,6 +1,6 @@
 .more {
   position: relative;
-  padding: 78px 20px 24px;
+  padding: 79px 0 24px;
   border-bottom: 1px solid #dedede;
 
   @media (min-width: $tablet_width) {
@@ -8,12 +8,14 @@
     box-sizing: border-box;
     height: 431px;
     width: 324px;
-    padding: 165px 37px 40px;
+    padding: 162px 37px 40px;
     border: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop_width) {
     width: 245px;
+    height: 434px;
+    padding: 162px 35px 40px;
   }
 }
 
@@ -27,14 +29,14 @@
 .more__text {
   @include strong_text;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
 
   @media (min-width: $tablet_width) {
     width: 145px;
-    margin-bottom: 26px;
+    margin-bottom: 27px;
     font-size: 20px;
   }
 
@@ -43,7 +45,7 @@
     content: "";
     width: 30px;
     height: 2px;
-    left: calc(50% - 14px);
+    left: calc(50% - 16px);
     top: 40px;
     background-color: #d3d3d3;
 
@@ -59,7 +61,7 @@
     content: "";
     width: 2px;
     height: 30px;
-    left: 50%;
+    left: 138px;
     top: 26px;
     background-color: #d3d3d3;
 
@@ -74,7 +76,7 @@
 .more__note {
   @include normal_text;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
   text-align: center;
   font-size: 12px;
   line-height: 16px;
@@ -82,6 +84,7 @@
   @media (min-width: $tablet_width) {
     width: 175px;
     font-size: 16px;
+    line-height: 18px;
   }
 }
 
@@ -102,10 +105,15 @@
   }
 
   &:active {
-    color: rgba(0, 0, 0, 0.3);
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet_width) {
     margin-top: auto;
+    padding: 11px 0 9px;
+  }
+
+  @media (min-width: $desktop_width) {
+    padding: 10px 1px 12px 4px;
   }
 }

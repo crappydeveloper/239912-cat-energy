@@ -8,20 +8,20 @@
   box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
-  padding: 25px 20px;
+  padding: 28px 18px 26px 19px;
 
   @media (min-width: $tablet_width) {
     justify-content: space-between;
     width: $tablet_width;
-    padding: 64px 72px;
+    padding: 64px 66px 64px 72px;
   }
 
   @media (min-width: $desktop_width) {
     position: absolute;
-    top: 95px;
-    left: 110px;
+    top: 100px;
+    left: 111px;
     width: 570px;
-    padding: 64px 0 64px 77px;
+    padding: 63px 0 64px 76px;
     background-color: #ffffff;
   }
 }
@@ -38,7 +38,7 @@
   }
 
   @media (min-width: $desktop_width) {
-    margin-right: 40px;
+    margin-right: 5px;
   }
 }
 
@@ -65,7 +65,7 @@
 .location__saintp {
   @media (min-width: $tablet_width) {
     position: absolute;
-    top: 55px;
+    top: 59px;
     right: 0;
     white-space: nowrap;
     padding-right: 5px;
