@@ -51,17 +51,16 @@
   }
 }
 
+.links__svg-mobile {
+  @media (min-width: $tablet_width) {
+    display: none;
+  }
+}
 
- .links__svg-mobile {
-   @media (min-width: $tablet_width) {
-     display: none;
-   }
- }
+.links__svg {
+  display: none;
 
- .links__svg {
-   display: none;
-
-   @media (min-width: $tablet_width) {
-     display: inline-block;
-   }
- }
+  @media (min-width: $tablet_width) {
+    display: inline-block;
+  }
+}
