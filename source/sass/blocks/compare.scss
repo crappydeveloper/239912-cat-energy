@@ -66,8 +66,8 @@
     box-sizing: border-box;
     position: absolute;
     content: "";
-    top: -6px;
-    left: 270px;
+    top: 7px;
+    left: 61px;
     width: 35px;
     height: 6px;
     border-radius: 3px;
@@ -76,6 +76,8 @@
     @media (min-width: $tablet_width) {
       width: 32px;
       height: 32px;
+      top: -6px;
+      left: 270px;
       background-color: #68b738;
       border: 12px solid #ffffff;
       border-radius: 50%;

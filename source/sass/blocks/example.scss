@@ -107,9 +107,10 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet_width) {
+    margin-bottom: 33px;
     width: 366px;
   }
 
@@ -123,13 +124,14 @@
 .example__result {
   position: relative;
   width: 122px;
-  padding: 19px 0 21px;
+  padding: 11px 0 21px;
   text-align: center;
   font-weight: bold;
   border: 1px solid rgb(205, 205, 205);
   border-radius: 3px;
 
   @media (min-width: $tablet_width) {
+    padding: 19px 0 21px;
     width: 160px;
   }
 
@@ -142,7 +144,7 @@
   @include normal_text;
   position: absolute;
   left: 50%;
-  bottom: -16px;
+  bottom: -12px;
   transform: translateX(-50%);
   width: 63%;
   text-transform: lowercase;
