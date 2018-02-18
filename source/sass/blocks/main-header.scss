@@ -8,9 +8,6 @@
   @media (min-width: $tablet_width) {
     border: none;
   }
-
-  //@media (min-width: $desktop_width) {
-  //}
 }
 
 .main-header__logo {
@@ -53,6 +50,7 @@
 }
 
 .main-header__burger {
+  visibility: hidden;
   width: 24px;
   height: 18px;
   padding: 0;
