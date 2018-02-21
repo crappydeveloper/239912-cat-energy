@@ -507,6 +507,11 @@ label[for="owner-number"] {
     border: 1px solid rgb(68, 68, 68);
     box-shadow: 0 0 0 1px rgb(68, 68, 68);
   }
+
+  &:invalid {
+    border: 1px solid #ff6161;
+    box-shadow: 0 0 0 1px #ff6161;
+  }
 }
 
 .form__input--padding {
@@ -537,6 +542,30 @@ label[for="owner-number"] {
 .program__form {
   input[type="radio"] + label {
     position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: -44px;
+      top: -6px;
+      width: 28px;
+      height: 28px;
+      background-color: transparent;
+      border: 8px solid transparent;
+      border-radius: 50%;
+      box-shadow: 0 0 1px 0 #cecece;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: $tablet_width) {
+      &::before {
+        left: -58px;
+        top: -8px;
+        width: 38px;
+        height: 38px;
+        border: 10px solid #ffffff;
+      }
+    }
   }
 
   input[type="radio"]:checked + label {

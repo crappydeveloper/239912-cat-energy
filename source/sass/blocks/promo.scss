@@ -27,7 +27,7 @@
     box-sizing: border-box;
     width: $desktop_width;
     height: 640px;
-    padding: 106px 193px 0;
+    padding: 106px 123px 0;
   }
 
   &::before {
@@ -59,7 +59,7 @@
     }
 
     @media (min-width: $desktop_width) {
-      left: 558px;
+      left: 488px;
       top: 25px;
       width: 552px;
       height: 499px;
@@ -80,7 +80,7 @@
     display: block;
     position: absolute;
     top: -117px;
-    right: 0;
+    right: -70px;
     width: 680px;
     height: 696px;
     z-index: -2;

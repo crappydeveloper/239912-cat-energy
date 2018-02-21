@@ -17,7 +17,7 @@
     justify-content: space-between;
     position: relative;
     width: $desktop_width;
-    padding: 130px 110px 20px;
+    padding: 130px 40px 20px;
     margin-bottom: 0;
   }
 }
@@ -60,7 +60,7 @@
 
   @media (min-width: $desktop_width) {
     position: absolute;
-    left: 72px;
+    left: 1px;
     top: 14px;
 
     &::after {

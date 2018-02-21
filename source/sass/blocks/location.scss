@@ -20,7 +20,7 @@
   @media (min-width: $desktop_width) {
     position: absolute;
     top: 100px;
-    left: 111px;
+    left: calc(50% - 610px);
     width: 570px;
     padding: 63px 0 64px 76px;
     background-color: #ffffff;
