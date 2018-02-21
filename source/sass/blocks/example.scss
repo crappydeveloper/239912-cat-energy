@@ -29,7 +29,7 @@
   @media (min-width: $desktop_width) {
     width: $desktop_width;
     height: auto;
-    padding: 105px 110px 0;
+    padding: 105px 40px 0;
   }
 }
 
@@ -209,6 +209,7 @@
 }
 
 .example__range-block {
+  position: relative;
   padding-top: 34px;
 
   @media (min-width: $tablet_width) {

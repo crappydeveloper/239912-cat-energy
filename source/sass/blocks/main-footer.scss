@@ -21,7 +21,7 @@
 
   @media (min-width: $desktop_width) {
     width: $desktop_width;
-    padding: 0 110px;
+    padding: 0 40px;
   }
 }
 
@@ -32,10 +32,10 @@
   @media (min-width: $tablet_width) {
     margin: 0;
   }
+}
 
-  @media (min-width: $desktop_width) {
-    padding-top: 13px;
-  }
+.main-footer__logo:active {
+  opacity: 0.3;
 }
 
 .main-footer__paragraph {
@@ -58,6 +58,10 @@
 
   @media (min-width: $tablet_width) {
     padding-top: 14px;
+  }
+
+  @media (min-width: $desktop_width) {
+    padding-top: 0;
   }
 }
 
